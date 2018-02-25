@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context="com.example.hpjaiswal.redblacktree.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Insert values"
+                android:inputType="number" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="insert"
+                android:text="insert" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n\n"/>
+            <TextView
+                android:id="@+id/preorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Preorder :\n"/>
+
+            <TextView
+                android:id="@+id/inorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Inorder :\n"/>
+
+            <TextView
+                android:id="@+id/postorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Postorder :\n"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n\n"/>
+
+            <EditText
+                android:id="@+id/dkey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Enter element to be deleted"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="delete"
+                android:onClick="delete"/>
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="enjoy [L9]"/>
+
+</LinearLayout>
